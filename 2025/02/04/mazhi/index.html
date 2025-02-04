@@ -144,10 +144,10 @@ var _hmt = _hmt || [];
     <div class="entry">
       
           <p>以下是对数电知识的一些总结和梳理</p>
-<h1 id="数制和码制"><a href="#数制和码制" class="headerlink" title="数制和码制"></a>数制和码制</h1><h2 id="数制"><a href="#数制" class="headerlink" title="数制"></a>数制</h2><p>主要的重点是数制之间的转换，利用<strong>除k取余法</strong>来实现将整数十进制转换为k进制，利用<strong>乘k取整</strong>的方法来实现小数部分转换。</p>
-<h2 id="码制"><a href="#码制" class="headerlink" title="码制"></a>码制</h2><p>数字分为有<strong>有符号数</strong>和<strong>无符号数</strong>，有符号就是在无符号数的前提下，在无符号数的最高位添加一个符号位，<strong>0</strong>代表的是正数，<strong>1</strong>代表的就是负数。在此基础上码制分为三种，分别是原码，补码和反码</p>
-<h3 id="正数的码制"><a href="#正数的码制" class="headerlink" title="正数的码制"></a>正数的码制</h3><p>正数的原码就是其有符号数本身，而正数的补码&#x3D;原码&#x3D;反码</p>
-<h3 id="负数的码制"><a href="#负数的码制" class="headerlink" title="负数的码制"></a>负数的码制</h3><p>负数的原码也是其有符号数本身，而补码则相对复杂，是该负数的绝对值的原码全部取反再加1得到的，而负数的反码则是在求补码过程中的中间值，也就是将负数绝对值的原码全部取反,举个例子</p>
+<h1 id="数制和码制"><a href="#数制和码制" class="headerlink" title="数制和码制"></a>数制和码制</h1><h2 id="数制"><a href="#数制" class="headerlink" title="数制"></a><strong>数制</strong></h2><p>主要的重点是数制之间的转换，利用<strong>除k取余法</strong>来实现将整数十进制转换为k进制，利用<strong>乘k取整</strong>的方法来实现小数部分转换。</p>
+<h2 id="码制"><a href="#码制" class="headerlink" title="码制"></a><strong>码制</strong></h2><p>数字分为有<strong>有符号数</strong>和<strong>无符号数</strong>，有符号就是在无符号数的前提下，在无符号数的最高位添加一个符号位，<strong>0</strong>代表的是正数，<strong>1</strong>代表的就是负数。在此基础上码制分为三种，分别是原码，补码和反码</p>
+<h3 id="正数的码制"><a href="#正数的码制" class="headerlink" title="正数的码制"></a><strong>正数的码制</strong></h3><p>正数的原码就是其有符号数本身，而正数的补码&#x3D;原码&#x3D;反码</p>
+<h3 id="负数的码制"><a href="#负数的码制" class="headerlink" title="负数的码制"></a><strong>负数的码制</strong></h3><p>负数的原码也是其有符号数本身，而补码则相对复杂，是该负数的绝对值的原码全部取反再加1得到的，而负数的反码则是在求补码过程中的中间值，也就是将负数绝对值的原码全部取反,举个例子</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-6的带符号二进制原码是：1110 最高位代表是符号位，后面则是代表6</span><br><span class="line">其原码也是 1110。</span><br><span class="line">要求其反码，则需要先求6的原码：0110，再取反得到-6的反码：1001</span><br><span class="line">再加1 得到-6的补码 1010</span><br><span class="line">即 原码=1110 反码=1001 补码=1010</span><br></pre></td></tr></table></figure>
 
 
